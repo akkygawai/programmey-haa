@@ -62,55 +62,7 @@ void main()
     getch();
 }
 
-
-
-(x)VOTING
-#include <stdio.h>
-#include <stdlib.h>
-void main()
-{
-    char pername[20];
-    int age;
-    printf("ENTER PERSON NAME:");
-    scanf("%s",&pername);
-    printf("\n ENTER PERSON AGE:");
-    scanf("%d",&age);
-    if(age>=18)
-    {
-     printf("\n ELIGIBLE TO VOTE");
-    }
-    else
-    {
-        printf("\n UNDER AGE NOT ELIGIBLE TO VOTE");
-    }
-    getch();
-} 
-
  
--SMALLEST OF THREE NUMBERS
-
-#include<stdio.h>
-#include<stdio.h>
-#include<math.h>
-void main()
-{
-    int a,b,c;
-    printf("enter three number:");
-    scanf("%d %d %d", &a,  &b, &c);
-    if(a<=b&&a<=c)
-    {
-    printf("\n %d is small",a);
-    }
-    else
-    if(b<=c&&b<=c)
-    {
-    printf("\n %d is small",b);
-    }
-    else
-    printf("\n %d is small",c);
-    getch();
-}
-
 
 -LAB PROGRAM REVERSING INTEGER
 
@@ -225,135 +177,31 @@ void main()
 }
 
 
-TO CHECK PRIME NO OR NOT
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
-    int num,i,rem;
-    printf("\n ENTER THE NUMBER");
-    scanf("%d",&num);
-    for(i=2;i<num;i++)
-    {
-        rem=num%i;
-        if(rem==0)
-            break;
-    }
-    if(num==i)
-        printf("\n PRIME NO.");
-    else
-        printf("\n NOT PRIME NO.");
-    getch();
-}
-
-
 LAB PROGRAM GENERATING PRIME NUMBERS
 #include<stdio.h>
-#include<conio.h>
-void main()
-{
-    int n1,n2,rem,i,n;
-    printf("\n ENTER THE START AND END NUMBER :");
-    scanf("%d %d",&n1,&n2);
-    printf("\n PRIME NUMBERS BETWEEN %d AND %d ARE :",n1,n2);
-    while(n1<=n2)
-    {
-        for(i=2;i<n;i++)
-        {
-            rem=n1%i;
-            if (rem==0)
-                break;
+
+void main(){
+
+    int num,i,count,n;
+    printf("Enter max range: ");
+    scanf("%d",&n);
+
+    for(num = 1;num<=n;num++){
+
+         count = 0;
+
+         for(i=2;i<=num/2;i++){
+             if(num%i==0){
+                 count++;
+                 break;
+             }
         }
-        if ((n1==i)||(n1==1))
-            printf("\n %d",n1);
-        n1++;
+
+         if(count==0 && num!= 1)
+             printf("%d ",num);
     }
-    getch();
-}
 
-
-TO PRINT MULTIPLICATION TABLE
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
-    int num,i,result;
-    printf("\n  ENTER A NUMBER TO PRINT A MULTIPLICATION TABLE");
-    scanf("%d",&num);
-    i=1;
-    do
-    {
-        result=num*i;
-        printf("\n %d x %d = %d",num,i,result);
-        i++;
-    }while(i<=10);
-    getch();
-}
-
-LAB PROGRAM :COUNT THE NUMBER FROM 100 TO 200 DIVISIBLE BY 7 USING FOR LOOP
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
-    int num,sum,count;
-    printf("\n THE NUMBERS DIVISIBLE BY 7 BETWEEN 100 AND 200 ARE :");
-    for(num=100,sum=0,count=0;num<=200;num++)
-    {
-        if(num%7==0)
-        {
-            printf("\n %d",num);
-            sum=sum+num;
-            count++;
-        }
-    }
-    printf("\n SUM OF NUMBERS BETWEEN 100 TO 200 THAT ARE DIVISIBLE BY 7 ARE:%d",sum);
-    printf("\n THE TOTAL NUMBERS  DIVISIBLE BY 7 ARE :%d",count);
-    getch();
-}
-
-TO CHECK PRIME NO OR NOT
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
-    int num,i,rem;
-    printf("\n ENTER THE NUMBER");
-    scanf("%d",&num);
-    for(i=2;i<num;i++)
-    {
-        rem=num%i;
-        if(rem==0)
-            break;
-    }
-    if(num==i)
-        printf("\n PRIME NO.");
-    else
-        printf("\n NOT PRIME NO.");
-    getch();
-}
-
-LAB PROGRAM GENERATING PRIME NUMBERS
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
-    int n1,n2,rem,i,n;
-    printf("\n ENTER THE START AND END NUMBER :");
-    scanf("%d %d",&n1,&n2);
-    printf("\n PRIME NUMBERS BETWEEN %d AND %d ARE :",n1,n2);
-    while(n1<=n2)
-    {
-        for(i=2;i<n;i++)
-        {
-            rem=n1%i;
-            if (rem==0)
-                break;
-        }
-        if ((n1==i)||(n1==1))
-            printf("\n %d",n1);
-        n1++;
-    }
-    getch();
+   getch();
 }
 
 
@@ -373,6 +221,30 @@ void main()
             b=b-a;
     }
     printf("\n GCD=%d",a);
+    getch();
+}
+
+
+LAB PROGRAM LARGEST OF THREE NUMBERS
+#include<stdio.h>
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int a,b,c;
+    printf("enter three number:");
+    scanf("%d %d %d", &a,  &b, &c);
+    if(a>b&&a>c)
+    {
+    printf("\n %d is large",a);
+    }
+    else
+    if(b>c&&b>c)
+    {
+    printf("\n %d is large",b);
+    }
+    else
+    printf("\n %d is large",c);
     getch();
 }
 
