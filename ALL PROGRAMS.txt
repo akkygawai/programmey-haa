@@ -249,6 +249,7 @@ void main()
 }
 
 LAB PROGRAM SUMMATION OF SET OF NUMBERS
+
 #include<stdio.h>
 void main()
 {
@@ -264,7 +265,59 @@ void main()
  getch();
 }
 
-LAB PROGRAM 
+LAB PROGRAM ARRAY ORDER REVERSAL
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[50],n,i,j,temp;
+    printf("\n ENTER THE ARRAY LIMIT :");
+    scanf("%d",&n);
+    printf("\n ENTER %d ELEMENTS INTO THE ARRAY :",n);
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+        printf("\n BEFORE REVERSAL :\n");
+        for(i=0;i<n;i++)
+            printf("%d \t",a[i]);
+        for(i=0,j=n-1;i<j;i++,j--)
+        {
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+        printf("\n AFTER REVERSAL :\n");
+    for(i=0;i<n;i++)
+        printf("%d \t",a[i]);
+    getch();
+}
+
+LAB PROGRAM FINDING THE MAXIMUM NUMBER IN A SET
+
+#include <stdio.h>
+void main()
+ {
+ int n,maximumNo;
+ int arr[100];
+ printf("Enter the number of elements (1 to 100): ");
+ scanf("%d", &n);
+ for (int i = 0; i < n; ++i)
+    {
+ printf("Enter number%d: ", i + 1);
+ scanf("%d", &arr[i]);
+ }
+ maximumNo=arr[0];
+ for (int i = 1; i < n; ++i)
+ {
+ if (maximumNo < arr[i])
+  {
+ maximumNo = arr[i];
+ }
+ }
+ printf("Largest element = %d", maximumNo);
+ getch();
+}
+
 
 
 
