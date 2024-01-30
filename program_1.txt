@@ -1,0 +1,24 @@
+
+LABP1.PROGRAM TO COMPUTE AREA OF CIRCLE AND TRIANGLE
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+    const float pi=3.142;
+    int radius;
+    float area,a,b,c,s;
+    clrscr();
+    printf("ENTER THE RADIUS OF CIRCLE");
+    scanf("%d",&radius);
+    printf("\n ENTER THE THREE SIDES OF TRIANGLE");
+    scanf("%f %f %f",&a,&b,&c);
+    area=pi*pow(radius,2);
+    s=(a+b+c);
+    printf("\n AREA OF CIRCLE =%.2f",area);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf("\n AREA OF TRIANGLE =%.2f",area);
+    getch();
+}
+
