@@ -1,5 +1,4 @@
-
-LABP1.PROGRAM TO COMPUTE AREA OF CIRCLE AND TRIANGLE
+PROGRAM TO COMPUTE AREA OF CIRCLE AND TRIANGLE
 
 #include<stdio.h>
 #include<conio.h>
@@ -21,4 +20,3 @@ void main()
     printf("\n AREA OF TRIANGLE =%.2f",area);
     getch();
 }
-

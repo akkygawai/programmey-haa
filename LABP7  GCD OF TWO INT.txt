@@ -1,0 +1,18 @@
+PROGRAM GCD OF TWO NUMBERS
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b;
+    printf("\n ENTER TWO NO.S : ");
+    scanf("%d%d",&a,&b);
+    while(a!=b)
+    {
+        if(a>b)
+            a=a-b;
+        else
+            b=b-a;
+    }
+    printf("\n GCD=%d",a);
+    getch();
+}

@@ -1,0 +1,18 @@
+PROGRAM FACTORIAL COMPUTATION
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num;
+long int fact=1;
+printf("\n enter any no");
+scanf("%d",&num);
+while (num>0)
+{
+fact=fact*num;
+num--;
+}
+printf("\n factorial=%ld",fact);
+getch();
+}

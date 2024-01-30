@@ -1,0 +1,28 @@
+PROGRAM TO SEARCH A (nth)SPECIFIC FIBONACCI NO.
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+
+	int f1=0, f2=1, cur , num,i,n;
+	printf("\n enter limit of fibonacci");
+	scanf("%d",&num);
+	if(num==1)
+	n=f1;
+	else
+	{
+	n=f2;
+	i=3;
+	while(i<=num)
+	{
+	cur=f1+f2;
+	n=cur;
+	f1=f2;
+	f2=cur;
+	i++;
+	}
+	printf("\n Nth Fiboacci no = %d",n);
+
+	}
+	return(0);
+}

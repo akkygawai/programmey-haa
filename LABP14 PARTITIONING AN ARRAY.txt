@@ -1,0 +1,21 @@
+PROGRAM PARTIONING AN ARRAY
+
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+    int arr[50],n,i,mid;
+    printf("\n enter how many elements?=");
+    scanf("%d",&n);
+    printf("\n enter %d elements", n);
+    for (i=0; i<n; i++)
+        scanf("%d",&arr[i]);
+    mid= (0+(n-1))/2;
+    printf("\n first partition values are:");
+    for (i=0; i<=mid; i++)
+        printf("%d",arr[i]);
+    printf("\n second partition values are:");
+    for (i=mid+1; i<n; i++)
+        printf("%d", arr[i]);
+    getch();
+}

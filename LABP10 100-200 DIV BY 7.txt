@@ -1,0 +1,20 @@
+PROGRAM :COUNT THE NUMBER FROM 100 TO 200 DIVISIBLE BY 7 USING FOR LOOP
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int num,sum,count;
+    printf("\n THE NUMBERS DIVISIBLE BY 7 BETWEEN 100 AND 200 ARE :");
+    for(num=100,sum=0,count=0;num<=200;num++)
+    {
+        if(num%7==0)
+        {
+            printf("\n %d",num);
+            sum=sum+num;
+            count++;
+        }
+    }
+    printf("\n SUM OF NUMBERS BETWEEN 100 TO 200 THAT ARE DIVISIBLE BY 7 ARE:%d",sum);
+    printf("\n THE TOTAL NUMBERS  DIVISIBLE BY 7 ARE :%d",count);
+    getch();
+}

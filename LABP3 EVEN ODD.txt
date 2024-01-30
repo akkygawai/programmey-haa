@@ -1,0 +1,20 @@
+EVEN AND ODD
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int num,rem;
+    printf("ENTER ANY NUMBER-");
+    scanf("%d",&num);
+    rem=num%2;
+    if(rem!=0)
+    {
+        printf("\n %d IS ODD NUMBER",num);
+    }
+    else
+    {
+        printf("\n %d IS EVEN NUMBER",num);
+    }
+    return 0;
+}

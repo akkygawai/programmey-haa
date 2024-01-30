@@ -1,7 +1,0 @@
-new programs
-q press karu kaas
-only q
-ok
-ka karu chahta?
-if you want to rename any file then just rename it here 
-like this then save it loocally then push it on remote repository

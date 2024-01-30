@@ -1,0 +1,16 @@
+PROGRAM TO SWAP VALUES
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,temp;
+    printf("\n ENTER TWO NUMBERS=");
+    scanf("%d %d",&a,&b);
+    printf("\n BEFORE SWAPPING a=%d & b=%d",a,b);
+    temp=a;
+    a=b;
+    b=temp;
+    printf("\n AFTER SWAPPING a=%d & b=%d",a,b);
+    getch();
+}
