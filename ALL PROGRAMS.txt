@@ -341,5 +341,36 @@ void main()
 }
 
 
+LAB PROGRAM MINIMUM 5 STUDENTS MARKS
+#include <stdio.h>
+
+int main() {
+    int N, s1, s2, s3, fail = 0, pass = 0, i;
+
+    do {
+        printf("\n ENTER THE NO OF STUDENTS:");
+        scanf("%d", &N);
+
+        if (N < 5) {
+            printf("\n\n\n MINIMUM 5 STUDENTS MARKS REQUIRED");
+        }
+    } while (N < 5);
+
+    for (i = 1; i <= N; i++) {
+        printf("\n ENTER MARKS IN 3 SUBJECTS: ");
+        scanf("%d %d %d", &s1, &s2, &s3);
+
+        if (s1 >= 35 && s2 >= 35 && s3 >= 35)
+            pass++;
+        else
+            fail++;
+    }
+
+    printf("\n TOTAL PASSED = %d", pass);
+    printf("\n TOTAL FAILED = %d", fail);
+
+    return 0;
+}
+
 
 
