@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+    int i,n,a=0,b=1,c;
+    printf("\n ENTER THE LIMIT :");
+    scanf("%d",&n);
+
+    printf("\n THE FIRST %d ELEMENTS IN THE FIBONACCI SERIES ARE : \n",n);
+
+    for(i=1;i<=n;i++)
+    {
+        printf("%d\t",a);
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    getch();
+}
